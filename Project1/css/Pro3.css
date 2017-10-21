@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:rgb(237,237,237);
+}
+/*logo*/
+#logo{
+    width: 100px;
+    height: 46px;
+    margin-left: 50px;
+    margin-top: 56px;
+}
+#main{
+    width: 400px;
+    /*height: 570px;*/
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin:0 auto;
+    margin-top: 3px;
+    padding-top: 50px;
+    box-shadow: 0 0 8px rgba(223,223,223,1);
+    overflow: hidden;
+}
+#reset-title{
+    width: 150px;
+    margin:0 auto 50px;
+}
+#mb-number,#message{
+    width:300px;
+    height: 50px;
+    overflow: hidden;
+    margin:0 auto;
+}
+#number-choose{
+    width: 100px;
+    height: 50px;
+    float: left;
+    background-color: rgb(246,246,246);
+    border: 1px solid rgb(182,182,182);
+    border-radius: 4px 0 0 0px;
+    box-sizing:border-box;
+
+}
+#number-choose img:first-child{
+    width: 30px;
+    height:30px;
+    margin: 12px 5px 0 6px;
+}
+#number-choose img:last-child{
+    width: 14px;
+    height: 11px;
+    margin:18px 0 10px 3px;
+    box-sizing:border-box;
+}
+#number-choose p{
+    margin-bottom: 6px;
+    display: inline-block;
+    line-height: 20px;
+    overflow: hidden;
+}
+#real-number{
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+#real-number input{
+    width: 189px;
+    height: 48px;
+    outline: none;
+    background-color: rgb(246,246,246);
+    border: 1px solid rgb(182,182,182);
+    border-left:hidden ;
+    border-radius: 0 4px 0px 0px;
+    padding-left: 10px;
+}
+input::-webkit-input-placeholder{
+    color: rgb(143,143,143);
+    font-size: 14px;
+}
+#region{
+    width: 300px;
+    border:1px solid rgb(167,167,167);
+    box-sizing: border-box;
+    margin:0 auto;
+    display:none;
+}
+#region p{
+    line-height: 30px;
+}
+/*短信验证码*/
+#message input,#new-ps input,#new-ps1 input{
+    box-sizing: border-box;
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgb(167,167,167);
+    border-top: hidden;
+    padding-left: 35px;
+    outline:none;
+}
+#message,#new-ps,#new-ps1{
+    position: relative;
+    margin:0 auto;
+    width: 300px;
+    height: 50px;
+}
+#message img{
+     position: absolute;
+     left: 12px;
+     top: 12px;
+     width:21px;
+     height:28px;
+ }
+#new-ps img,#new-ps1 img{
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    width:17px;
+    height:20px;
+}
+#new-ps1 input{
+    border-radius: 0 0 4px 4px;
+}
+#get{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    width: 100px;
+    height: 36px;
+    background-color:rgb(124,186,222);
+    border-radius: 18px;
+}
+#get p{
+    color:white;
+    font-size: 14px;
+    margin:8px 0 0 16px;
+}
+/*密码提交重置按键*/
+#reset-ps{
+    width: 300px;
+    margin:0 auto;
+    margin-top: 20px;
+}
+#reset-ps input{
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background-color:#3194d0;
+    color: white;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+}
+/*返回登录注册*/
+#return {
+    width: 300px;
+    margin:0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#return p{
+    width: 117px;
+    margin:0 auto;
+    text-decoration: none;
+    color: rgb(167,167,167);
+}
+#return a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(167,167,167);
+}
