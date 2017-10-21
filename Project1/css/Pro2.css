@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(237,237,237) ;
+
+}
+/*logo*/
+#logo{
+    width: 100px;
+    height: 46px;
+    margin-left: 50px;
+    margin-top: 56px;
+}
+#logo img{
+    width: 100px;
+    height: 46px;
+}
+
+#dhz{
+    width: 400px;
+    /*height: 570px;*/
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin:0 auto;
+    margin-top: 3px;
+    padding-top: 50px;
+    box-shadow: 0 0 8px rgba(223,223,223,1);
+    overflow: hidden;
+}
+/*tab键*/
+#tab{
+    width: 300px;
+    height: 39px;
+    margin:0 auto;
+    /*border: 1px solid red;*/
+}
+b{
+    color:rgb(132,132,132);
+}
+#tab a{
+
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 36px;
+    padding: 5px 10px 5px 10px;
+
+}
+#tab a:first-child{
+    margin-left:75px;
+    margin-right: 7px;
+    color:rgb(132,132,132);
+}
+#tab a:last-child{
+    margin-left:7px;
+    color: #ea6f5a;
+    border-bottom: 2px solid #ea6f5a;
+}
+/*注册*/
+#zhuce{
+    width: 300px;
+    /*height: 200px;*/
+    margin:0 auto;
+    margin-top: 35px;
+    /*background-color: aqua;*/
+}
+input::-webkit-input-placeholder{
+    color: rgb(143,143,143);
+    font-size: 14px;
+}
+#Num,#nicheng,#pwa{
+    height:50px;
+    position: relative;
+}
+#nc,#number,#pws{
+    width: 251px;
+    height: 40px;
+    padding: 4px 12px 4px 35px;
+    outline:none;
+}
+#nc{
+    border-top-left-radius: 4px ;
+    border-top-right-radius: 4px ;
+    border-top: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+}
+#number{
+    border: 1px solid #c8c8c8;
+    /*border-right: 1px solid #c8c8c8;*/
+}
+#pws{
+    border-bottom-left-radius: 4px ;
+    border-bottom-right-radius: 4px ;
+    border: 1px solid #c8c8c8;
+}
+#zhuce img{
+    position: absolute;
+    left:12px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+}
+/*注册按钮*/
+#btn{
+    margin:0 auto;
+    margin-top: 25px;
+    width: 300px;
+    height: 43px;
+    }
+#sub{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(62,183,36);
+    border-radius:21.5px;
+    color: white;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+}
+/*注册协议*/
+#xieyi{
+    width: 300px;
+    margin:0 auto;
+    margin-top: 10px;
+}
+#xieyi p:first-child{
+    color: rgb(150,149,150);
+    font-size:12px;
+    width:225px;
+    margin:0 auto;
+}
+#hebing{
+    width: 130px;
+    margin:0 auto;
+
+}
+#hebing span{
+    font-size: 12px;
+    color: rgb(150,149,150);
+}
+#hebing a{
+    font-size: 12px;
+    text-decoration: none;
+    color:rgb(55,128,197);
+}
+/*社交*/
+#sj{
+    width: 267px;
+    margin:0 auto;
+    margin-top:30px ;
+}
+#sj div:first-child{
+    border-top: 1px solid rgb(150,149,150);
+    width: 70px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+#sj div:last-child{
+    border-top: 1px solid rgb(150,149,150);
+    width: 70px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+#sj span{
+    color:rgb(150,149,150);
+    font-size: 12px;
+}
+/*图标*/
+#tubiao{
+    margin-top: 15px;
+}
+#tubiao ul{
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom:62px;
+}
+#tubiao li:first-child{
+    list-style: none;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background-color: rgb(214,59,53);
+    border-radius: 25px;
+}
+#tubiao li:nth-child(2){
+    list-style: none;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background-color: rgb(60,177,31);
+    border-radius: 25px;
+}
+#tubiao li:nth-child(3){
+    list-style: none;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background-color: rgb(58,116,202);
+    border-radius: 25px;
+}
+#tubiao img{
+    width: 27px;
+    height: 27px;
+    margin: 12px;
+}

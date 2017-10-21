@@ -20,20 +20,42 @@ body{
 
 #dhz{
     width: 400px;
-    height: 570px;
+    /*height: 570px;*/
     border-radius: 4px;
     background-color: #ffffff;
     margin:0 auto;
     margin-top: 3px;
     padding-top: 50px;
     box-shadow: 0 0 8px rgba(223,223,223,1);
+    overflow: hidden;
 }
 /*tab键*/
 #tab{
     width: 300px;
     height: 39px;
     margin:0 auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+}
+b{
+    color:rgb(132,132,132);
+}
+#tab a{
+
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 36px;
+    padding: 5px 10px 5px 10px;
+
+}
+#tab a:first-child{
+    margin-left:80px;
+    margin-right: 7px;
+    color: #ea6f5a;
+    border-bottom: 2px solid #ea6f5a;
+}
+#tab a:last-child{
+    margin-left:7px;
+    color:rgb(132,132,132);
 }
 /*手机号*/
 #num{
@@ -86,9 +108,160 @@ input::-webkit-input-placeholder{
     color: rgb(143,143,143);
 }
 /*验证*/
-
-
-
-
-
-
+#yz{
+    width: 298px;
+    height: 42px;
+    margin:0 auto;
+    margin-top: 20px;
+    border: 1px solid rgb(188,188,188);
+    cursor: pointer;
+    background: linear-gradient(rgb(249,249,249),rgb(247,247,247),rgb(245,245,245),rgb(241,241,241));
+}
+#zz{
+    width: 26px;
+    height: 26px;
+    margin:8px;
+    border: 1px solid dodgerblue;
+    display: inline-block;
+    border-radius: 13px;
+}
+#z3{
+    width: 14px;
+    height: 14px;
+    margin:6px;
+    background-color: dodgerblue;
+    display: inline-block;
+    border-radius: 7px;
+}
+#ts{
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+#ts p{
+    font-size: 14px;
+    color: rgb(87,87,87);
+    font-weight: 400;
+}
+#tt{
+    width: 20px;
+    height: 20px;
+    /*background-color: blue;*/
+    margin-left: 100px;
+    margin-bottom: 3px;
+    display: inline-block;
+    overflow: hidden;
+}
+#tt img{
+    width: 100%;
+    height: auto;
+}
+/*问题*/
+#rmb{
+    width: 300px;
+    /*height: 50px;*/
+    margin:0 auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#l_me{
+    float: left;
+}
+#l_me span{
+    line-height: 15px;
+    font-size: 13px;
+    color: rgb(132,135,132);
+}
+#r_me{
+    float: right;
+}
+#r_me a{
+    text-decoration: none;
+    color: rgb(132,135,132);
+    font-size: 14px;
+}
+/*登录*/
+#btn{
+    width: 300px;
+    height: 43px;
+    margin:0 auto;
+    margin-top: 15px;
+    border-radius:21.5px;
+}
+#btn>input{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(55,128,197);
+    border-radius:21.5px;
+    color: white;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+    outline: none;
+}
+/*社交*/
+#sj{
+    font-size: 12px;
+    color: rgb(168,172,183);
+    width: 240px;
+    margin:0 auto;
+    margin-top: 30px;
+}
+#sj span{
+    margin-right: 20px;
+}
+/*图标*/
+#tubiao{
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+#tubiao ul{
+    width: 250px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+#tubiao li:first-child{
+    list-style: none;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background-color: rgb(214,59,53);
+    border-radius: 25px;
+}
+#tubiao li:nth-child(2){
+    list-style: none;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background-color: rgb(60,177,31);
+    border-radius: 25px;
+}
+#tubiao li:nth-child(3){
+    list-style: none;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background-color: rgb(58,116,202);
+    border-radius: 25px;
+}
+#tubiao li:last-child{
+    list-style: none;
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background-color: rgb(236,236,236);
+    border-radius: 25px;
+}
+#tubiao li img{
+    width: 27px;
+    height: 27px;
+    margin: 12px;
+}
+#tubiao li:last-child p{
+    margin:13px;
+    margin-top: 16px;
+    width:27px;
+    font-size: 13px;
+    color: rgb(142,142,142);
+}
