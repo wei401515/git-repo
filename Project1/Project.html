@@ -14,16 +14,16 @@
         <div id="tab">
             <a href="Project.html">登录</a>
             <b>·</b>
-            <a href="Project2.html" id="ss" v-on:mouseenter="onmouse">注册</a>
+            <a href="Project2.html" id="ss" >注册</a>
         </div>
         <div id="zhuce">
         <form action="">
         <div id="num">
-            <img src="img/user.png" alt="" id="user">
+            <img src="img/user.png" alt="" id="user" v-model="username">
             <input type="text" placeholder="手机号或邮箱" id="shuru">
         </div>
         <div id="pw">
-            <img src="img/lock.png" alt="" id="mima">
+            <img src="img/lock.png" alt="" id="mima" v-model="password">
             <input type="text" placeholder="密码" id="qu">
         </div>
         <div id="yz">
@@ -48,7 +48,7 @@
             </div>
         </div>
             <div id="btn">
-            <input type="submit" value="登录">
+            <input type="submit" value="登录" >
             </div>
         </form>
         <div id="sj">
@@ -79,7 +79,7 @@
                             <img src="img/qq.png" alt="">
                         </a>
                     </li>
-                    <li>
+                    <li id="special">
                         <p>其他</p>
                     </li>
                 </ul>
@@ -88,24 +88,15 @@
 
     </div>
 </body>
-<script>
-        //移入注册按钮 边框显示
-            new Vue({
-                el:'#ss',
-                data:{
+<script src="jquery-2.2.3.min.js"></script>
+<script type="application/javascript">
 
-                },
-            methods:{
-                onmouse:function () {
-                    this.borderBottom=isShow;
-
-                }
-                    }
-
-
+    $(function () {
+            $("#special").on("click",function () {
+                $(this).css("background-color","#00820f")
+                $("#special p").text("豆").css("font-size","18px").css("color","white")
+                $("#special p").css("margin-top","12px").css("margin-left","16px")
             })
-
-
-
+    })
 </script>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/Pro3.css">
+    <script src="node_modules/vue/dist/vue.js"></script>
 </head>
 <body>
        <div id="logo">
@@ -20,12 +21,6 @@
             <div id="real-number">
                 <input type="text" placeholder="手机号">
             </div>
-        </div>
-         <div id="region">
-            <p>+61   澳大利亚</p>
-            <p>+33   法国</p>
-            <p>+49   德国</p>
-            <p>+852  中国香港</p>
         </div>
          <div id="message">
              <img src="img/safe.png" alt="">
@@ -52,6 +47,33 @@
                     </a>
                 </p>
             </div>
+            <div id="region">
+                <p>+61   澳大利亚</p>
+                <p>+33   法国</p>
+                <p>+49   德国</p>
+                <p>+852  中国香港</p>
+            </div>
         </div>
 </body>
+<script src="jquery-2.2.3.min.js"></script>
+<script type="application/javascript">
+
+    $(function () {
+        $("#number-choose").on("click",function () {
+            $("#region").toggle();
+        })
+
+
+
+
+
+    })
+
+
+
+
+
+
+</script>
+
 </html>

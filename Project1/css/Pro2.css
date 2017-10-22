@@ -58,6 +58,9 @@ b{
     color: #ea6f5a;
     border-bottom: 2px solid #ea6f5a;
 }
+#tab a:first-child:hover{
+    border-bottom: 2px solid #ea6f5a;
+}
 /*注册*/
 #zhuce{
     width: 300px;

@@ -22,6 +22,7 @@ body{
     padding-top: 50px;
     box-shadow: 0 0 8px rgba(223,223,223,1);
     overflow: hidden;
+    position: relative;
 }
 #reset-title{
     width: 150px;
@@ -84,8 +85,13 @@ input::-webkit-input-placeholder{
     border:1px solid rgb(167,167,167);
     box-sizing: border-box;
     margin:0 auto;
-    display:none;
+    position: absolute;
+    left:50px;
+    top: 175px;
+    background-color: white;
+    display: none;
 }
+
 #region p{
     line-height: 30px;
 }
