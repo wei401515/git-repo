@@ -14,7 +14,7 @@
         <div id="tab">
             <a href="Project.html">登录</a>
             <b>·</b>
-            <a href="Project2.html">注册</a>
+            <a href="Project2.html" id="ss" v-on:mouseenter="onmouse">注册</a>
         </div>
         <div id="zhuce">
         <form action="">
@@ -65,17 +65,17 @@
             <div id="tubiao">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="https://api.weibo.com/oauth2/authorize?client_id=1881139527&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fweibo%2Fcallback&response_type=code&state=36374b9cdb66d39466020477e6127866c084fbec4c1a4d86">
                             <img src="img/new.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxe9199d568fe57fdd&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=7b52c310519b5f33219e74c54541ad8bcae221420f15e8b8#wechat_redirect">
                             <img src="img/weixin.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxe9199d568fe57fdd&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=7b52c310519b5f33219e74c54541ad8bcae221420f15e8b8#wechat_redirect">
                             <img src="img/qq.png" alt="">
                         </a>
                     </li>
@@ -89,7 +89,21 @@
     </div>
 </body>
 <script>
+        //移入注册按钮 边框显示
+            new Vue({
+                el:'#ss',
+                data:{
 
+                },
+            methods:{
+                onmouse:function () {
+                    this.borderBottom=isShow;
+
+                }
+                    }
+
+
+            })
 
 
 
