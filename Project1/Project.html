@@ -12,15 +12,15 @@
 </div>
     <div id="dhz">
         <div id="tab">
-            <a href="Project.html">登录</a>
+            <a href="Project.html" id="a1">{{message}}</a>
             <b>·</b>
-            <a href="Project2.html" id="ss" >注册</a>
+            <a href="Project2.html" id="ss" >{{message2}}</a>
         </div>
         <div id="zhuce">
         <form action="">
         <div id="num">
-            <img src="img/user.png" alt="" id="user" v-model="username">
-            <input type="text" placeholder="手机号或邮箱" id="shuru">
+            <img src="img/user.png" alt="" id="user" >
+            <input type="text" placeholder="手机号或邮箱" id="shuru" v-model="username">
         </div>
         <div id="pw">
             <img src="img/lock.png" alt="" id="mima" v-model="password">
@@ -33,7 +33,7 @@
                     </div>
             </div>
             <div id="ts">
-                <p>点击按钮进行验证</p>
+                <p>{{text}}</p>
             </div>
             <div id="tt">
                 <img src="img/you.png" alt="">
@@ -41,10 +41,10 @@
         </div>
         <div id="rmb">
             <div id="l_me">
-                <input type="checkbox"><span>  记住我</span>
+                <input type="checkbox"><span>  {{text2}}</span>
             </div>
             <div id="r_me">
-                <a href="Project3.html">登录遇到问题?</a>
+                <a href="Project3.html">{{text2}}</a>
             </div>
         </div>
             <div id="btn">
@@ -97,6 +97,38 @@
                 $("#special p").text("豆").css("font-size","18px").css("color","white")
                 $("#special p").css("margin-top","12px").css("margin-left","16px")
             })
+    })
+    //tab注册 登陆
+    new Vue({
+        el:'#a1',
+        data:{
+            message:'登录'
+        }
+    })
+    new Vue({
+        el:'#ss',
+        data:{
+            message2:'注册'
+        }
+    })
+    //text窗口
+    new Vue({
+        el:'#ts p',
+        data:{
+            text:'点击按钮进行验证'
+        }
+    })
+    new Vue({
+        el:'#l_me span',
+        data:{
+            text2:'记住我'
+        }
+    })
+    new Vue({
+        el:'#r_me a',
+        data:{
+            text2:'登录遇到问题?'
+        }
     })
 </script>
 </html>
