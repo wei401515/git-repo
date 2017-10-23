@@ -10,10 +10,10 @@
         <div id="all">
             <div id="nav">
                 <div id="btn">
-                <div id="lb1">
+                <div id="lb1" v-on:click="clicked" :class="{active1:isBody1Show}">
                     <img  v-bind:src="nav.btn1"  alt="" >
                 </div>
-                <div id="lb2" >
+                <div id="lb2"  v-on:click="clicked2" :class="{active1:isBody2Show}">
                     <img v-bind:src="nav.btn2" alt="">
                 </div>
                 </div>
@@ -39,11 +39,29 @@
 <script>
         new Vue({
             el:'#all',
+            methods:{
+                clicked:function () {
+                   this.isBody2Show=false,
+                       this.isBody1Show=true,
+                       this.isActive1=true,
+                       this.isActive2=false
+                },
+                clicked2:function () {
+                    this.isBody2Show=true,
+                     this.isBody1Show=false,
+                        this.isActive2=true,
+                        this.isActive1=false
+                }
+
+            },
+
             data: {
                 nav: {
                     btn1: 'img/grade.png',
                     btn2: 'img/list.png'
                 },
+                isBody1Show:true,
+                isBody2Show:false,
                 array : [{
                     "title": "What You Need To Know About CSS Variables",
                     "url": "http://tutorialzine.com/2016/03/what-you-need-to-know-about-css-variables/",
@@ -73,21 +91,7 @@
                         "title": "Creating Your First Desktop App With HTML, JS and Electron",
                         "url": "http://tutorialzine.com/2015/12/creating-your-first-desktop-app-with-html-js-and-electron/",
                         "image": 'https://tutorialzine.com/media/2015/12/creating-your-first-desktop-app-with-electron.png'
-                    }],
-                isBody1Show:true,
-                isBody2Show:false,
-                methods:{
-                    clicked:function () {
-                        isBody2Show=true,
-                        isBody1Show=false
-                    },
-                    clicked2:function () {
-                        isBody2Show=false,
-                            isBody1Show=true
-                    }
-
-                }
-
+                    }]
             }
         })
 

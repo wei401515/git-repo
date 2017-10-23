@@ -70,3 +70,6 @@
 #tu{
     display: inline-block;
 }
+#all .active1{
+    background-color: rgb(169,30,123);
+}
