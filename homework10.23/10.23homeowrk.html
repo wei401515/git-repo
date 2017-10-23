@@ -10,19 +10,29 @@
         <div id="all">
             <div id="nav">
                 <div id="btn">
-                <div id="lb1"  >
-                    <img v-bind:src="nav.btn1" alt="" >
+                <div id="lb1">
+                    <img  v-bind:src="nav.btn1"  alt="" >
                 </div>
                 <div id="lb2" >
                     <img v-bind:src="nav.btn2" alt="">
                 </div>
                 </div>
             </div>
-            <div id="body" >
+            <div id="body" v-if="isBody1Show">
                 <div v-for="value,index in array">
                     <a v-bind:href="value.url">
                 <img  v-bind:src="value.image" alt="">
                     </a>
+                </div>
+            </div>
+            <div id="body2" v-if="isBody2Show">
+                <div id="fenxiang" v-for="value,index in array">
+                    <div id="tu">
+                        <img v-bind:src="value.image" alt="">
+                    </div>
+                    <div id="biaoji">
+                        <a v-bind:href="value.url">{{value.title}}</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -63,10 +73,29 @@
                         "title": "Creating Your First Desktop App With HTML, JS and Electron",
                         "url": "http://tutorialzine.com/2015/12/creating-your-first-desktop-app-with-html-js-and-electron/",
                         "image": 'https://tutorialzine.com/media/2015/12/creating-your-first-desktop-app-with-electron.png'
-                    }]
+                    }],
+                isBody1Show:true,
+                isBody2Show:false,
+                methods:{
+                    clicked:function () {
+                        isBody2Show=true,
+                        isBody1Show=false
+                    },
+                    clicked2:function () {
+                        isBody2Show=false,
+                            isBody1Show=true
+                    }
+
+                }
 
             }
         })
+
+
+
+
+
+
 </script>
 </body>
 

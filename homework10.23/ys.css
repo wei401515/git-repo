@@ -41,6 +41,32 @@
 }
 #body img{
     width: 290px;
-    height: 260px;
+    height: 230px;
     margin-left: 6px;
+}
+/*另一页*/
+
+#body2 img{
+     width:200px;
+     padding-top: 10px;
+ }
+#fenxiang{
+    border-bottom: 2px solid darkgray;
+    width: 570px;
+    margin:0 auto;
+
+}
+#fenxiang a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+#biaoji{
+    width: 360px;
+    display: inline-block;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+#tu{
+    display: inline-block;
 }
