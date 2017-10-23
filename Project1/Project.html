@@ -12,9 +12,9 @@
 </div>
     <div id="dhz">
         <div id="tab">
-            <a href="Project.html" id="a1">{{message}}</a>
+            <a href="Project.html" id="a1">登录</a>
             <b>·</b>
-            <a href="Project2.html" id="ss" >{{message2}}</a>
+            <a href="Project2.html" id="ss">注册</a>
         </div>
         <div id="zhuce">
         <form action="">
@@ -23,8 +23,8 @@
             <input type="text" placeholder="手机号或邮箱" id="shuru" v-model="username">
         </div>
         <div id="pw">
-            <img src="img/lock.png" alt="" id="mima" v-model="password">
-            <input type="text" placeholder="密码" id="qu">
+            <img src="img/lock.png" alt="" id="mima" >
+            <input type="text" placeholder="密码" id="qu" v-model="password">
         </div>
         <div id="yz">
             <div id="zz">
@@ -41,14 +41,14 @@
         </div>
         <div id="rmb">
             <div id="l_me">
-                <input type="checkbox"><span>  {{text2}}</span>
+                <input type="checkbox"><span>{{text2}}</span>
             </div>
             <div id="r_me">
                 <a href="Project3.html">{{text2}}</a>
             </div>
         </div>
             <div id="btn">
-            <input type="submit" value="登录" >
+            <input type="submit" value="登录" v-on:click="login">
             </div>
         </form>
         <div id="sj">
@@ -99,18 +99,7 @@
             })
     })
     //tab注册 登陆
-    new Vue({
-        el:'#a1',
-        data:{
-            message:'登录'
-        }
-    })
-    new Vue({
-        el:'#ss',
-        data:{
-            message2:'注册'
-        }
-    })
+
     //text窗口
     new Vue({
         el:'#ts p',
@@ -130,5 +119,31 @@
             text2:'登录遇到问题?'
         }
     })
+    //密码和用户
+    var user=new Vue({
+        el:'#shuru',
+        data:{
+            username:''
+        },
+        methods:{
+            login:function () {
+               alert('用户名: '+this.username)
+            }
+        }
+
+    })
+    var user=new Vue({
+        el:'#qu',
+        data:{
+            password:''
+        }
+    })
+    new Vue({
+        el:'#ss',
+        data:{
+
+    }
+    })
+
 </script>
 </html>

@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#all{
+    width: 600px;
+    margin:0 auto;
+}
+#nav{
+    width: 600px;
+    height: 60px;
+    background-color: rgb(71,132,166);
+    overflow: hidden;
+}
+#lb1,#lb2{
+    background-color: rgb(47,108,153);
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#btn{
+    margin-top: 7.5px;
+    margin-left: 460px;
+}
+#lb1 img{
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+}
+#lb2 img{
+     width: 37px;
+     height: 39px;
+    margin: 4px;
+ }
+#body div{
+    width: 300px;
+    display: inline-block;
+}
+#body img{
+    width: 290px;
+    height: 260px;
+    margin-left: 6px;
+}

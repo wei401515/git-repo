@@ -48,10 +48,7 @@
                 </p>
             </div>
             <div id="region">
-                <p>+61   澳大利亚</p>
-                <p>+33   法国</p>
-                <p>+49   德国</p>
-                <p>+852  中国香港</p>
+                <p v-for="title in titleArray" id="kk">{{title}}</p>
             </div>
         </div>
 </body>
@@ -62,18 +59,19 @@
         $("#number-choose").on("click",function () {
             $("#region").toggle();
         })
-
-
-
-
-
     })
-
-
-
-
-
-
+    new Vue({
+        el:'#region',
+        //数据，用于存放变量
+        data:{
+            titleArray:[
+                '天气晴朗，万里无云',
+                '月黑风高',
+                '霾霾霾霾霾',
+                'asda'
+            ]
+        }
+    })
 </script>
 
 </html>
