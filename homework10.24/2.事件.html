@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="btn">
+<!--v-show 切换标签的display-->
+<!--v-show:特别频繁的操作
+           显示和隐藏的地方
+           本质是修改标签的display属性
+    -->
+    <div v-show="isShow">asd</div>
+<!--v-on  指令监听 DOM 事件来触发一些 JavaScript 代码。-->
+    <!--所有的html标签都可以绑定事件-->
+    <!--methods中所有的函数内的this都代表vue实例本身-->
+<button  v-on:click="clicked">点击1</button>
+        <!--简写-->
+<button  @click="clicked2">点击2</button>
+<!--缩写写法只适用于单个函数，不适用于下面的情况-->
+<button v-on="{mouseenter:mouseEnter,click:clicked}"></button>
+        <!--使用内联JavaScript语句-->
+<button @click="clicked3('Hi')">点击3</button>
+
+</div>
+</body>
+<script>
+        new Vue({
+            el:'#btn',
+            data:{
+                isShow:true
+            },
+            methods:{
+                clicked:function () {
+                    console.log('点击输出');
+                    this.isShow=!this.isShow
+                },
+                clicked2:function () {
+                    console.log('点击输出');
+                },
+                clicked3:function (value) {
+                    console.log(value);
+                },
+                mouseEnter:function () {
+                    console.log("鼠标移入")
+                }
+            }
+        })
+</script>
+</html>

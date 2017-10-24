@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+<!--v-for 基于源数据多次渲染元素或模板块-->
+        <div v-for="item in arr">
+            <p>{{item}}</p>
+        </div>
+    <!--另外也可以为数组索引指定别名 (或者用于对象的键)-->
+    <div v-for="(value,index) in arr">
+        <p>{{index+1}}:{{value}}</p>
+    </div>
+</div>
+</body>
+<script>
+        new Vue({
+                el:'#app',
+                data:{
+                   arr:[
+                      '第一',
+                      '第二',
+                       '第三',
+                      '第四'
+                   ]
+                },
+                methods:{
+
+                }
+        })
+
+
+</script>
+</html>

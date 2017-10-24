@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-pre,v-once,v-cloak</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<style>
+    [v-cloak]{
+        display:none;
+    }
+</style>
+<body>
+<div id="app">
+    <!--不进行编译-->
+    <p v-pre>{{message}}</p>
+    <!--只编译一次-->
+    <p v-once>{{message}}</p>
+    <!--v-cloak 结合文本插值使用-->
+    <!--当{{}}未编译完成时，不展示标签-->
+    <!--完成该指令后，该指令移除-->
+    <p v-cloak>{{message}}</p>
+</div>
+<script>
+    var vm=new Vue({
+        el:'#app',
+        data:{
+            message:'hello,Vue.js'
+        }
+    })
+</script>
+</body>

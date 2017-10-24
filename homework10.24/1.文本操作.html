@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<!--1.{{}} 文本插值-->
+    <p >{{message}}</p>
+<!--2.v-text 赋值给 textContent-->
+    <p v-text="message"></p>
+<!--3.v-html 展示html代码-->
+    <!--v-html:读取一段html的代码-->
+    <!--常用于数据内容为html时-->
+    <!--例如：新闻，文章-->
+    <!--指令  带有v-前缀的特殊属性-->
+    <!--v-on 监听DOM-->
+    <div v-html="html"></div>
+<!--4.v-bind 单向数据绑定 属性绑定 内容可以使用表达式-->
+    <!--缩写-->
+    <div :id="box"></div>
+<!--5.v-model 双向数据绑定-->
+    <input v-model="username">
+</div>
+</body>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            message:'Hello,Vue.js',
+            html:'<h1>我是一段html</h1>',
+            username:''
+        }
+    })
+
+
+
+
+</script>
+</html>

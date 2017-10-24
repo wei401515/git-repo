@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+<!--v-if  if判断-->
+<!--v-else-->
+<!--v-if：不常用的部分,本质是创建和移出-->
+<div v-if="vm > 0.5">
+    Now you see me
+</div>
+<div v-else>
+    Now you don't
+</div>
+<!--v-else-if-->
+</div>
+<script>
+            new Vue({
+                el:'#app',
+                data:{
+                    vm:Math.random()
+                    },
+                methods:{
+
+                }
+            })
+
+
+
+</script>
+</body>
+
+</html>
