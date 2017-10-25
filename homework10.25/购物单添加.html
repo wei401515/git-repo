@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+        <div id="app">
+                <know v-for="(Prod,index)in Prods"
+                      @pass="total"  ></know>
+            <p>总价：{{total}}</p>
+        </div>
+        <script>
+            Vue.component('know',{
+                template: `
+      <div>
+        <p>单价: {{price}}</p>
+        <button @click="sub">-</button>
+        <p>{{count}} 件</p>
+        <button @click="sum">+</button>
+      </div>
+    `,
+      props: ['price', 'index'],
+       data:function () {
+           return{
+             count:0
+           }
+       },
+        methods:{
+            sum:function () {
+                this.count++;
+                this.$emit('pass', this.count, this.index)
+            } ,
+            sub:function () {
+                this.count--;
+                if(this.count<=0){
+                    this.count=0;
+                    return;
+                }
+                this.$emit('pass', this.count, this.index)
+            }
+        }
+       }),
+                new Vue({
+                  el:'#app',
+                   data:{
+                     Prods:[
+                         {price:100,count:0},
+                         {price:200,count:0},
+                         {price:300,count:0}
+                           ]
+                } ,
+                   methods:{
+                        total:function (count,index) {
+                            this.Prods[index].count = count
+                            //没想到
+                        }
+                },
+                    /////??????????
+                    computed: {
+                        totalPrice: function () {
+                            var total = 0
+                            for (var i = 0; i < this.Prods.length; i++) {
+                                total += this.Prods[i].count * this.Prods[i].price
+                            }
+                            return total;
+                        }
+                    }
+                })
+
+        </script>
+</body>
+</html>
